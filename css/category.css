@@ -1,0 +1,108 @@
+.category {
+    margin-bottom: 52px;
+}
+
+.category__container {
+    padding: 0 18px;
+}
+
+.category__title {
+    margin-bottom: 36px;
+}
+
+.category__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.category__item + .category__item {
+    margin-top: 36px;
+}
+
+.category__item-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.category__item-img-wrapper {
+    background: var(--color-gradient);
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.category__item-img-wrapper img {
+    width: 159px;
+    height: auto;
+    display: block;
+}
+
+.category__item-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.category__item-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category__item-info-reviews {
+    font-size: 14px;
+    padding-left: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 15.9013V18.9951L12.0622 16.0038L12.5913 15.9951C14.6952 15.9607 16.5886 15.7488 18.0044 15.5334C18.8979 15.3975 19.5187 14.7739 19.6536 13.9909C19.8406 12.9049 20 11.5289 20 10C20 8.47108 19.8406 7.09512 19.6536 6.00907C19.5187 5.22608 18.8979 4.60252 18.0044 4.46657C16.4559 4.23096 14.3383 4 12 4C9.66167 4 7.54408 4.23096 5.99562 4.46657C5.10214 4.60252 4.4813 5.22608 4.34643 6.00907C4.15936 7.09512 4 8.47108 4 10C4 11.5289 4.15936 12.9049 4.34643 13.9909C4.46355 14.6709 4.93854 15.2158 5.63108 15.4461L7 15.9013ZM2.37546 5.66957C2.66565 3.98488 4.00472 2.74648 5.69477 2.48932C7.31411 2.24293 9.53559 2 12 2C14.4644 2 16.6859 2.24293 18.3052 2.48932C19.9953 2.74648 21.3344 3.98488 21.6245 5.66957C21.8268 6.84372 22 8.33525 22 10C22 11.6647 21.8268 13.1563 21.6245 14.3304C21.3344 16.0151 19.9953 17.2535 18.3052 17.5107C16.8238 17.7361 14.8384 17.9586 12.6241 17.9949L6.50873 21.6085C5.84211 22.0024 5 21.5219 5 20.7476V17.344C3.64656 16.8939 2.62456 15.7766 2.37546 14.3304C2.17321 13.1563 2 11.6647 2 10C2 8.33525 2.17321 6.84372 2.37546 5.66957Z' fill='black'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 7C6.44772 7 6 7.44772 6 8C6 8.55228 6.44772 9 7 9H17C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7H7ZM7 11C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11C11.5523 13 12 12.5523 12 12C12 11.4477 11.5523 11 11 11H7Z' fill='black'/%3E%3C/svg%3E");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.category__item-info-rating {
+    font-size: 14px;
+    padding-left: 32px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M11.0489 2.92705C11.3483 2.00574 12.6517 2.00574 12.9511 2.92705L14.4697 7.60081C14.6035 8.01284 14.9875 8.2918 15.4207 8.2918H20.335C21.3037 8.2918 21.7065 9.53141 20.9228 10.1008L16.947 12.9894C16.5966 13.244 16.4499 13.6954 16.5838 14.1074L18.1024 18.7812C18.4017 19.7025 17.3472 20.4686 16.5635 19.8992L12.5878 17.0106C12.2373 16.756 11.7627 16.756 11.4122 17.0106L7.43648 19.8992C6.65276 20.4686 5.59828 19.7025 5.89763 18.7812L7.41623 14.1074C7.55011 13.6954 7.40345 13.244 7.05296 12.9894L3.07722 10.1008C2.29351 9.53141 2.69628 8.2918 3.66501 8.2918H8.57929C9.01252 8.2918 9.39647 8.01284 9.53035 7.60081L11.0489 2.92705Z' fill='%23FFE439'/%3E%3C/svg%3E");
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+@media (min-width: 1200px) {
+    .category {
+        margin-bottom: 92px;
+    }
+
+    .category__container {
+        max-width: 1352px;
+        margin: 0 auto;
+        padding: 0 18px;
+    }
+
+    .category__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5%;
+        margin-bottom: -36px;
+    }
+
+    .category__item + .category__item {
+        margin-top: 0;
+    }
+
+    .category__item {
+        width: 30%;
+        margin-bottom: 36px;
+    }
+
+    .category__item-img-wrapper img {
+        width: 348px;
+    }
+
+    .category__item-title {
+        font-size: 16px;
+    }
+}

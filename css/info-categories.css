@@ -1,0 +1,115 @@
+.info-categories__list {
+    padding: 16px;
+    margin: 0;
+    list-style: none;
+}
+
+.info-categories__item {
+    margin-bottom: 36px;
+}
+
+.info-categories__item a {
+    display: block;
+    margin-right: 12px;
+    border: 3px solid rgba(112, 37, 105, 0.80);
+    border-radius: 6px;
+    padding: 16px 0 16px 16px;
+    position: relative;
+}
+
+.info-categories__item-bg-img {
+    position: relative;
+    min-width: 270px;
+    width: calc(100% + 16px);
+    height: auto;
+    border-radius: 6px;
+}
+
+.info-categories__item-description {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+}
+
+.info-categories__item-img-wrapper {
+    width: 84px;
+    height: 79px;
+    border-radius: 6px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.40);
+    padding: 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-categories__item-description span {
+    display: block;
+    margin-top: 4px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.info-categories__item-description img {
+
+}
+
+@media (min-width: 1200px) {
+    .info-categories__list {
+        max-width: 1352px;
+        margin: 0 auto;
+        padding: 0 18px 92px;
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    .info-categories__item {
+        max-width: 398px;
+        margin-bottom: 0;
+        transition: all 0.4s ease;
+    }
+
+    .info-categories__item a {
+        padding: 21px 0 21px 49px;
+    }
+
+
+    .info-categories__item-bg-img {
+        width: 364px;
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .info-categories__item-description {
+        bottom: 27px;
+        left: 67px;
+    }
+
+    .info-categories__item-img-wrapper {
+        width: 162px;
+        height: 154px;
+    }
+
+    .info-categories__item:nth-child(1) .info-categories__item-description img {
+        width: 82px;
+        height: 142px;
+    }
+
+    .info-categories__item:nth-child(2) .info-categories__item-description img {
+        width: 139px;
+        height: 134px;
+    }
+
+    .info-categories__item:nth-child(3) .info-categories__item-description img {
+        width: 68px;
+        height: 134px;
+    }
+
+    .info-categories__item-description span {
+        margin-top: 12px;
+        font-size: 24px;
+        font-family: 'Mirza', serif;
+    }
+}

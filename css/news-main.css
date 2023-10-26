@@ -1,0 +1,121 @@
+.news-main {
+    background: var(--color-gradient);
+    margin-bottom: 50px;
+}
+
+.news-main__container {
+    padding: 18px 16px 24px;
+}
+
+.news-main__title {
+    text-align: center;
+}
+
+.news-main__title + img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto 6px;
+}
+
+.news-main__description {
+    margin-bottom: 16px;
+}
+
+.news-main__form {
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    background: var(--color-background);
+}
+
+.news-main__form-input {
+    width: 100%;
+    display: block;
+    margin-bottom: 18px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--color-font);
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+.news-main__form-input:-webkit-autofill,
+.news-main__form-input:-webkit-autofill:hover,
+.news-main__form-input:-webkit-autofill:focus,
+.news-main__form-input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.news-main__checkbox-label {
+    display: flex;
+    color: var(--color-news);
+    margin-bottom: 24px;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.news-main__checkbox-label .checkbox {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--color-divide);
+    background-color: white;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.news-main__form input[type=checkbox]:checked + .news-main__checkbox-label .checkbox {
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Crect width='24' height='24' fill='%23BB7DB6'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M18.7071 7.29289C19.0976 7.68342 19.0976 8.31658 18.7071 8.70711L10.7071 16.7071C10.3166 17.0976 9.68342 17.0976 9.29289 16.7071L5.29289 12.7071C4.90237 12.3166 4.90237 11.6834 5.29289 11.2929C5.68342 10.9024 6.31658 10.9024 6.70711 11.2929L10 14.5858L17.2929 7.29289C17.6834 6.90237 18.3166 6.90237 18.7071 7.29289Z' fill='black'/%3E%3C/svg%3E");
+}
+
+.news-main__button {
+    width: 230px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+    .news-main {
+        margin-bottom: 92px;
+    }
+
+    .news-main__container {
+        padding: 28px 0 46px;
+        width: 1095px;
+        margin: 0 auto;
+    }
+
+    .news-main__title + img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 48px;
+    }
+
+    .news-main__description {
+        font-size: 24px;
+        font-family: 'Mirza', serif;
+        margin-bottom: 28px;
+        text-align: center;
+    }
+
+    .news-main__form {
+        padding: 42px 20px 18px;
+    }
+
+    .news-main__form-input {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .news-main__button {
+        width: 100%;
+        max-width: 396px;
+        padding: 15px;
+    }
+}
