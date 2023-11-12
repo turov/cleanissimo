@@ -1,0 +1,309 @@
+.about__block:nth-of-type(2) {
+    background-color: #3B2159;
+    padding: 20px 20px 0 20px;
+}
+
+.about__block:nth-of-type(2) img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.about__block:nth-of-type(1) {
+    padding: 60px 20px;
+}
+
+.about__part-title {
+    display: none;
+}
+
+.about__mobile-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #3B2159;
+    margin-bottom: 16px;
+}
+
+.about__button {
+    display: block;
+    width: 100%;
+    background: #3B2159;
+    color: #FFFFFF;
+    margin-top: 32px;
+}
+
+.about-us {
+    padding: 60px 20px;
+    background-color: #E7DAF4;
+}
+
+.about-us__header {
+    margin-bottom: 32px;
+}
+
+.about-us__header span {
+    display: block;
+    color: #6E6E6E;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us__header p {
+    font-weight: 500;
+}
+
+.about-us__content {
+    margin-bottom: 32px;
+}
+
+.about-us__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-us__item + .about-us__item {
+    margin-top: 32px;
+    border-radius: 12px;
+}
+
+.about-us__link {
+    position: relative;
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-size: 100%;
+    background-position: center;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.about-us__item:nth-of-type(1) .about-us__link {
+    background-image: url("../assets/img/cat1.jpg");
+}
+
+.about-us__item:nth-of-type(2) .about-us__link {
+    background-image: url("../assets/img/cat2.jpg");
+}
+
+.about-us__item:nth-of-type(3) .about-us__link {
+    background-image: url("../assets/img/cat3.jpg");
+}
+
+.about-us__link img {
+    transition: all 0.4s ease;
+}
+
+.about-us__item:nth-of-type(1) .about-us__link img {
+    width: 110px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.about-us__item:nth-of-type(2) .about-us__link img {
+    width: 150px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: -40px;
+    bottom: -10px;
+}
+
+.about-us__item:nth-of-type(3) .about-us__link img {
+    width: 90px;
+    height: auto;
+    display: block;
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+}
+
+.about-us__link span {
+    display: block;
+    color: #3B2159;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    transition: all 0.4s ease;
+}
+
+@media (min-width: 1200px) {
+    .about {
+        background: linear-gradient(to right, #FFFFFF, #FFFFFF 50%, #3B2159 50%, #3B2159);
+    }
+
+    .about__block:nth-of-type(1) {
+        padding: 0 16px;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .about__block {
+        width: 50%;
+        position: relative;
+    }
+
+    .about__block:nth-of-type(2) {
+        background-color: unset;
+    }
+
+    .about__block:nth-of-type(2) .about__part-title {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        font-size: 64px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .about__block:nth-of-type(1) {
+        color: #FFFFFF;
+        padding-top: 233px;
+        display: flex;
+    }
+
+    .about__block:nth-of-type(1) .about__part-title {
+        display: block;
+        position: absolute;
+        top: 122px;
+        left: 10px;
+        font-size: 64px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: right;
+    }
+
+    .about__text {
+        font-size: 16px;
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .about__mobile-title {
+        display: none;
+    }
+
+    .about__part-title {
+        display: block;
+    }
+
+    .about__button {
+        color: #000000;
+        font-size: 14px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 146px;
+        height: 146px;
+        background: #FFFFFF;
+        border-radius: 50%;
+        margin-top: 0;
+        margin-left: 16px;
+    }
+
+    .about-us {
+        padding: 56px 20px 100px;
+    }
+
+    .about-us__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .about-us__header {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    .about-us__header span {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 0;
+        width: 25%;
+        flex-shrink: 0;
+    }
+
+    .about-us__header p {
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    .about-us__content {
+        margin-bottom: 44px;
+    }
+
+    .about-us__content p {
+        width: 25%;
+        flex-shrink: 0;
+        margin-left: 50%;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .about-us__list {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 16px
+    }
+
+    .about-us__item {
+       width: 33.333%;
+    }
+
+    .about-us__link {
+        background-size: cover;
+        height: 429px;
+    }
+
+    .about-us__item + .about-us__item {
+        margin-top: 0;
+    }
+
+    .about-us__item:nth-of-type(1) .about-us__link img {
+        width: 254px;
+        bottom: -20px;
+        right: -20px;
+    }
+
+    .about-us__item:nth-of-type(2) .about-us__link img {
+        width: 254px;
+        bottom: -20px;
+        right: -60px;
+    }
+
+    .about-us__item:nth-of-type(3) .about-us__link img {
+        width: 120px;
+        bottom: -20px;
+        right: -10px;
+    }
+
+    .about-us__item .about-us__link:hover img {
+       right: 50%;
+        transform: translateX(50%);
+    }
+}

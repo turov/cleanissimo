@@ -1,37 +1,150 @@
 .banner {
-    background-image: url("../assets/img/apartment1.jpg");
-    background-size: cover;
-    padding-top: 44px;
-    min-height: 250px;
+    background-color: #3B2159;
     z-index: 1;
 }
 
 .banner__container {
-    padding: 50px 18px;
+    padding: 104px 20px 60px;
 }
 
-.banner__title {
-    padding: 22px 6px;
-    max-width: 245px;
-    backdrop-filter: blur(8px);
-    text-align: center;
-    margin: 0 auto;
-    background: rgba(255, 255, 255, 0.20);
+.banner__left h4 {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+.banner__left span {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+    display: block;
+    text-transform: uppercase;
+    font-size: 64px;
+    color: #FFFFFF;
+    -webkit-text-fill-color: #3B2159;
+    -webkit-text-stroke: 1px #FFFFFF;
+}
+
+.banner__left span:nth-of-type(2) {
+    -webkit-text-fill-color: #FFFFFF;
+    animation: Shift 4s ease infinite;
+}
+
+.banner__right {
+    display: none;
+}
+
+.banner__button {
+    margin-top: 54px;
+    display: block;
+    width: 100%;
+}
+
+@keyframes Shift {
+    0% {
+        transform: translateX(0);
+        -webkit-text-fill-color: #FFFFFF;
+        -webkit-text-stroke: 1px #FFFFFF;
+    }
+    25% {
+        transform: translateX(30px);
+        -webkit-text-fill-color: #00C9AC;
+        -webkit-text-stroke: 1px #00C9AC;
+    }
+    50% {
+        transform: translateX(30px);
+        -webkit-text-fill-color: #00C9AC;
+        -webkit-text-stroke: 1px #00C9AC;
+    }
+    75% {
+        transform: translateX(0);
+        -webkit-text-fill-color: #FFFFFF;
+        -webkit-text-stroke: 1px #FFFFFF;
+    }
+    100% {
+        transform: translateX(0);
+        -webkit-text-fill-color: #FFFFFF;
+        -webkit-text-stroke: 1px #FFFFFF;
+    }
+}
+
+@keyframes Bounce {
+    0% {
+        bottom: -40px;
+        transform: rotate(0) translateX(-50%);
+    }
+    50% {
+        bottom: 0;
+        transform: rotate(-10deg) translateX(-50%);;
+    }
+    100% {
+        bottom: -40px;
+        transform: rotate(0) translateX(-50%);;
+    }
 }
 
 @media (min-width: 1200px) {
-    .banner {
-        padding-top: 100px;
-    }
-
     .banner__container {
-        padding: 125px 0;
-        max-width: 1316px;
+        padding: 120px 20px 50px;
+        max-width: 1360px;
         margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
     }
 
-    .banner__title {
-        max-width: 645px;
-        padding: 86px 40px;
+    .banner__right {
+        display: block;
+        width: 50%;
+    }
+
+    .banner__left {
+        position: relative;
+        width: 50%;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-right: 180px;
+    }
+
+    .banner__left::before {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        right: -50%;
+        transform: translateX(-50%);
+        background-image: url("../assets/img/shower-cabin.png");
+        background-size: cover;
+        width: 358px;
+        height: 462px;
+        animation: Bounce 4s ease infinite;
+    }
+
+    .banner--cleaning-tools .banner__left::before {
+        width: 283px;
+        height: 540px;
+        right: -40%;
+        background-image: url("../assets/img/cleaning-tools.png");
+    }
+
+    .banner--fabric-care .banner__left::before {
+        width: 503px;
+        height: 503px;
+        right: -81%;
+        background-image: url("../assets/img/fabric-care.png");
+    }
+
+    .banner__left h4 {
+        text-align: right;
+    }
+
+    .banner__right img {
+        display: block;
+        width: 100%;
+        border-radius: 12px;
     }
 }

@@ -3,9 +3,8 @@
     width: 100%;
     top: 0;
     left: 0;
-    backdrop-filter: blur(8px);
     z-index: 3;
-    background: rgba(255, 255, 255, 0.20);
+    background-color: #E7DAF4;;
 }
 
 .header__button-icon {
@@ -24,7 +23,7 @@
     content: '';
     width: 16px;
     height: 2px;
-    background-color: var(--color-font);
+    background-color: #000000;
     transition: all 0.4s ease;
     border-radius: 4px;
 }
@@ -54,7 +53,7 @@
 .header__container {
     display: flex;
     align-items: center;
-    padding: 5px 18px;
+    padding: 5px 20px;
     height: 44px;
 }
 
@@ -64,9 +63,8 @@
     top: 44px;
     z-index: 3;
     width: 100%;
-    background-color: var(--color-background);
+    background-color: #E7DAF4;
     padding: 0 18px;
-    box-shadow: var(--box-shadow);
     transition: left 0.4s ease;
 }
 
@@ -82,12 +80,15 @@
 }
 
 .header__navigation-link {
-    color: var(--color-button-normal);
+    color: #000000;
     text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .header__navigation-link--active {
-    border-bottom: 1px solid var(--color-button-hover);
+    border-bottom: 1px solid #000000;
 }
 
 .header__button:checked ~ .header__navigation {
@@ -99,17 +100,28 @@
         display: none;
     }
 
+    .header__navigation {
+        width: fit-content;
+    }
+
     .header__container {
-        max-width: 1352px;
+        max-width: 1360px;
         margin: 0 auto;
-        padding: 14px 18px;
+        padding: 28px 20px;
         height: unset;
         align-items: center;
     }
 
+    .header__logo-link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
     .header__logo-link img {
-        width: 127px;
-        height: 67px;
+        width: 94px;
+        height: 50px;
     }
 
     .header__navigation {
@@ -121,21 +133,16 @@
 
     .header__navigation-list {
         display: flex;
-        margin-left: auto;
+        margin-right: auto;
         width: fit-content;
     }
 
     .header__navigation-item {
         padding: 0;
-        margin-left: 176px;
+        margin-right: 54px;
     }
 
     .header__navigation-item:first-child {
         margin-left: 0;
-    }
-
-    .header__navigation-link {
-        color: var(--color-font);
-        font-size: 16px;
     }
 }

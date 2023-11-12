@@ -3,7 +3,7 @@
     font-weight: 400;
     box-sizing: border-box;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: 1.1;
 }
 
 *::before,
@@ -11,21 +11,25 @@
     box-sizing: inherit;
 }
 
+body {
+    background-color: #E7DAF4;
+}
+
 h1, h2 {
-    font-family: 'Mirza', serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.1;
 }
 
 h3 {
-    font-family: 'Mirza', serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     font-weight: 400;
     font-size: 24px;
-    line-height: 1.4;
+    line-height: 1.1;
     font-style: normal;
 }
 
@@ -34,7 +38,7 @@ h4 {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.1;
 }
 
 p {
@@ -42,7 +46,7 @@ p {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.4;
+    line-height: 1.1;
 }
 
 .visually-hidden {
@@ -59,14 +63,14 @@ p {
     overflow: hidden;
 }
 
-@media (min-width: 1000px) {
-    * {
-        font-size: 16px;
-    }
+/*@media (min-width: 1000px) {*/
+/*    * {*/
+/*        font-size: 16px;*/
+/*    }*/
 
-    h1, h2 {
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 1;
-    }
-}
+/*    h1, h2 {*/
+/*        font-weight: 400;*/
+/*        font-size: 48px;*/
+/*        line-height: 1;*/
+/*    }*/
+/*}*/
