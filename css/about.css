@@ -160,6 +160,9 @@
 
     .about__block:nth-of-type(2) {
         background-color: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
     }
 
     .about__block:nth-of-type(2) .about__part-title {
@@ -178,6 +181,7 @@
         color: #FFFFFF;
         padding-top: 233px;
         display: flex;
+        padding-bottom: 40px;
     }
 
     .about__block:nth-of-type(1) .about__part-title {
