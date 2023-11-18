@@ -86,6 +86,18 @@
     }
 }
 
+@keyframes Opacity {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 @media (min-width: 1200px) {
     .banner__container {
         padding: 120px 20px 50px;
@@ -107,7 +119,7 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-right: 180px;
+        padding-right: 240px;
     }
 
     .banner__left::before {
@@ -122,6 +134,34 @@
         width: 358px;
         height: 462px;
         animation: Bounce 4s ease infinite;
+    }
+
+    .banner__left::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 73px;
+        left: 0;
+        width: 600px;
+        height: 600px;
+        background: url("../assets/img/spay2.png");
+        background-size: cover;
+        animation: Opacity 4s ease infinite;
+    }
+
+    .banner--cleaning-tools .banner__left::after {
+        width: 650px;
+        height: 456px;
+        bottom: 0;
+        background-image: url("../assets/img/shine.png");
+    }
+
+    .banner--fabric-care .banner__left::after {
+        width: 600px;
+        height: 465px;
+        background-size: cover;
+        bottom: 0;
+        background-image: url("../assets/img/bubbles.png");
     }
 
     .banner--cleaning-tools .banner__left::before {

@@ -1,5 +1,5 @@
-.catalog:last-child {
-    margin-bottom: 155px;
+.catalog__wrapper {
+   padding-bottom: 155px;
 }
 
 .catalog__container {
@@ -69,6 +69,12 @@
 }
 
 @media (min-width: 1200px) {
+    .catalog__wrapper {
+        background-image: url("../assets/img/bubbles.png");
+        background-attachment: fixed;
+        background-repeat: repeat;
+    }
+
     .catalog__container {
         padding: 84px 20px 0;
         margin-bottom: 16px;
