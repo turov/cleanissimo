@@ -38,11 +38,11 @@
     background-color: #E7DAF4;
 }
 
-.about-us__header {
+.about-us__block {
     margin-bottom: 32px;
 }
 
-.about-us__header span {
+.about-us__block span {
     display: block;
     color: #6E6E6E;
     font-size: 32px;
@@ -51,12 +51,20 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.about-us__header p {
+.about-us__block p {
     font-weight: 500;
 }
 
-.about-us__content {
-    margin-bottom: 32px;
+.about-us__image {
+    display: none;
+}
+
+.about-us__image img {
+    display: block;
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .about-us__list {
@@ -236,12 +244,30 @@
         max-width: 1360px;
         margin: 0 auto;
         padding: 0 20px;
+        align-items: center;
     }
 
-    .about-us__header {
-        display: flex;
-        margin-bottom: 16px;
+    .about-us__block {
+        /*display: flex;*/
+        /*margin-bottom: 16px;*/
+        width: 50%;
+        max-width: 456px;
+        margin-right: auto;
+        margin-bottom: 56px;
     }
+
+    .about-us__block p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+
+    .about-us__image {
+        width: 50%;
+        display: block;
+        margin-bottom: 56px;
+    }
+
     .about-us__header span {
         font-size: 24px;
         font-weight: 600;
